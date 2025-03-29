@@ -120,3 +120,10 @@
     @apply bg-background text-foreground;
   }
 }
+
+@media print {
+  .a4-page {
+    width: 210mm;
+    height: 297mm;
+  }
+}
