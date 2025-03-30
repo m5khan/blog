@@ -14,8 +14,8 @@ export function ExperienceSection({
   description,
 }: Props) {
   return (
-    <div id="experience-card" className="my-2">
-      <div id="exp-heading" className="grid grid-cols-2 items-baseline">
+    <div id="experience-card" className="">
+      <div id="exp-heading" className="grid grid-cols-[2fr_1fr] items-baseline">
         <div>
           <p className="font-medium text-lg leading-5">{company}</p>
           <p>{title}</p>
