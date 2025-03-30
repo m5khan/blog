@@ -1,3 +1,4 @@
+import { ExperienceSection } from "@/components/cv/experience-section";
 import {
   GithubIcon,
   Linkedin,
@@ -53,51 +54,52 @@ export default function CV() {
             <section id="experience" className="p-3">
               <h2 className="text-md">WORK EXPERIENCE</h2>
               {/* <Separator /> */}
-              <div id="experience-card" className="my-2">
-                <div
-                  id="exp-heading"
-                  className="grid grid-cols-[2fr_1fr] items-baseline"
-                >
-                  <div>
-                    <p className="font-medium text-lg leading-5">
-                      Smart In Media AG
-                    </p>
-                    <p>Software Engineer</p>
-                  </div>
-                  <div className="text-end">
-                    <p>Since 07. 2020</p>
-                    <div className="flex items-center gap-0.5 justify-end">
-                      {/* <MapPinIcon size={14} strokeWidth={1.5} /> */}
-                      <p className="text-sm">Cologne, Germany</p>
-                    </div>
-                  </div>
-                </div>
-                <div id="exp-content" className="text-gray-600 text-sm my-2">
-                  <ul className="list-disc ps-4 text-justify">
-                    <li>
-                      Re-planned and implemented database models to achieve
-                      scalability and better adaptation to modification
-                    </li>
-                    <li>
-                      Revamped the User experience to decrease information loss
-                      and increased robustness
-                    </li>
-                    <li>
-                      Introduced typescript in the solution for better
-                      maintainability, scalability, and error prevention
-                    </li>
-                    <li>
-                      Implemented containerization-based deployment in CI/CD
-                      pipeline to increase availability in case of accidents
-                    </li>
-                    <li>
-                      First-hand engagement with the client, understanding the
-                      requirements, proposing solutions, planning the timeline
-                      in Agile-based software development
-                    </li>
-                  </ul>
-                </div>
-              </div>
+              <ExperienceSection
+                company="Smart In Media AG"
+                title="Software Engineer"
+                date="Since 06. 2020"
+                location="Cologne, Germany"
+                description={[
+                  "Re-planned and implemented database models to achieve scalability and better adaptation to modification",
+                  "Revamped the User experience to decrease information loss and increased robustness",
+                  "Introduced typescript in the solution for better maintainability, scalability, and error prevention",
+                  "Implemented containerization-based deployment in CI/CD pipeline to increase availability in case of accidents",
+                  "First-hand engagement with the client, understanding the requirements, proposing solutions, planning the timeline in Agile-based software development",
+                ]}
+              />
+              <ExperienceSection
+                company="Colwiz Ltd"
+                title="Software Engineer"
+                date="Since 07. 2013 - 09. 2016"
+                location="Karachi, Pakistan"
+                description={[
+                  "Boost speed in the generation of research author profiles by extending the Apache Nutch plugin; creating a data processing pipeline",
+                  "Develop, took ownership, and release Google Chrome's citations plugin on the Google web store",
+                  "Assisted backend team by helping to implement scheduling tasks on Java-based microservice",
+                  "Scaled and improved text-search performance by deploying Apache SolrCloud on Linux servers in distributed environment",
+                  "Revamped obsolete flash-based application to the newer web technology which resulted in faster performance and better distribution",
+                ]}
+              />
+              <ExperienceSection
+                company="Censhare AG"
+                title="Working Student Software Engineer"
+                date="Since 08. 2018 - 03. 2020"
+                location="Munich, Germany"
+                description={[
+                  "designed and developed electron based code and documentation-sharing solution to support different teams within the organization for better coordination and collaboration",
+                  "Supporting the solution's development team in achieving the requirements of the client by working on product customization",
+                ]}
+              />
+              <ExperienceSection
+                company="top.legal"
+                title="Working Student Software Engineer"
+                date="Since 02. 2018 - 08. 2018"
+                location="Munich, Germany"
+                description={[
+                  "Increased accessibility and assurance for the customer onboarding process to easily publish their proposals by implementing graph-like forms using React",
+                  "Worked closely with the CTO and participated in planning and designing the architecture of the new features",
+                ]}
+              />
             </section>
           </article>
           <aside className="bg-white">
