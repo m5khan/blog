@@ -44,7 +44,7 @@ export default function CV() {
       <main className="w-[210mm] h-[297mm] bg-white">
         <div className="grid grid-cols-[2fr_1fr] h-full">
           <article className="bg-white">
-            <header className="h-32 mb-2 bg-white p-3 border-b">
+            <header className="h-32 mb-3 bg-white p-3 border-b">
               <div className="flex gap-5 items-center">
                 <div>
                   <Image
@@ -97,11 +97,10 @@ export default function CV() {
                   date="Since 06. 2020"
                   location="Cologne, Germany"
                   description={[
+                    'Implement ERP like application for "Qualitätssicherungs-Initiative Pathologie" in facilitating their business to business processes',
                     "Re-planned and implemented database models to achieve scalability and better adaptation to modification",
-                    "Revamped the User experience to decrease information loss and increased robustness",
-                    "Introduced typescript in the solution for better maintainability, scalability, and error prevention",
-                    "Implemented containerization-based deployment in CI/CD pipeline to increase availability in case of accidents",
-                    "First-hand engagement with the client, understanding the requirements, proposing solutions, planning the timeline in Agile-based software development",
+                    "Implemented containerization-based deployment in CI/CD pipeline",
+                    "First-hand engagement with the client, proposing solutions, planning the timeline in Agile-based software development",
                   ]}
                 />
                 <ExperienceSection
@@ -110,7 +109,7 @@ export default function CV() {
                   date="08. 2018 - 03. 2020"
                   location="Munich, Germany"
                   description={[
-                    "designed and developed electron based code and documentation-sharing solution to support different teams within the organization for better coordination and collaboration",
+                    "designed and developed code and documentation-sharing solution for teams to coordinate and collaborate within the organization",
                     "Supporting the solution's development team in achieving the requirements of the client by working on product customization",
                   ]}
                 />
@@ -120,8 +119,17 @@ export default function CV() {
                   date="02. 2018 - 08. 2018"
                   location="Munich, Germany"
                   description={[
-                    "Increased accessibility and assurance for the customer onboarding process to easily publish their proposals by implementing graph-like forms using React",
-                    "Worked closely with the CTO and participated in planning and designing the architecture of the new features",
+                    "Implemented application feature to facilitate clients seeking legal assistance in effortlessly publishing their projects, connecting them to the appropriate legal practitioner",
+                    "Worked closely with the CTO and participated in planning, designing the architecture and implimentation of the web application features",
+                  ]}
+                />
+                <ExperienceSection
+                  company="CRM Factory GmbH"
+                  title="Working Student Software Engineer"
+                  date="06. 2017 - 02. 2018"
+                  location="Munich, Germany"
+                  description={[
+                    "worked on the integration of the application component to the client businesses as a B2B service. I also helped in improving and supporting the web application product by Working along with a Senior Engineer",
                   ]}
                 />
                 <ExperienceSection
@@ -141,7 +149,7 @@ export default function CV() {
             </section>
           </article>
           <aside className="bg-white">
-            <header className="h-32 mb-2 p-3 bg-white border-b">
+            <header className="h-32 mb-3 p-3 bg-white border-b">
               <div className="grid grid-cols-[1fr_7fr] grid-rows-4 gap-0.5 items-center">
                 <div>
                   <MailIcon size={19} strokeWidth={1} />
@@ -245,7 +253,7 @@ export default function CV() {
                     <LanguagesIcon className="text-sky-700" strokeWidth={1.5} />
                   }
                 />
-                <div className="">
+                <div className="mt-1">
                   <ul className="text-sm list-disc ps-4 text-justify">
                     <li>
                       Member of student dorm network administration team
